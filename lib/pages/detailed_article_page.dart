@@ -101,7 +101,7 @@ class _ArticleDetailsState extends State<ArticleDetails> {
                               horizontal: 5, vertical: 30),
                           child: Text(
                             widget.article.content,
-                            textAlign: TextAlign.start,
+                            textAlign: TextAlign.justify,
                             style: const TextStyle(fontSize: 23),
                           ),
                         )
