@@ -6,7 +6,7 @@ import 'package:news_app_with_api/services/trending_service_api.dart';
 import 'package:news_app_with_api/services/mobile_service_api.dart';
 import 'package:news_app_with_api/services/home_service_api.dart';
 
-void main() => const MyApp();
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -14,8 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      // theme: ThemeData(),
+      debugShowCheckedModeBanner: false,  
       title: 'Material App',
       home: HomePage(),
     );
