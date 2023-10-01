@@ -6,8 +6,8 @@ This Flutter app is a news aggregator that provides users with access to the lat
 
 ## Screenshots
 
-![App Screenshots 1](https://drive.google.com/file/d/18iTr4p3u1k8MJA12DLhaD9LuXL89fn0M/view?usp=drive_link)
-![App Screenshots 2](https://drive.google.com/file/d/1r2v5yeWen35nn8dqYFnQWOIglE1eTIlT/view?usp=drive_link)
+![App Screenshots 1](https://github.com/ayato91/News_Time/blob/e3fe7fc0a04b087f6fce98ed152d3221096dc380/assets/image.png)
+![App Screenshots 2](https://github.com/ayato91/News_Time/blob/e3fe7fc0a04b087f6fce98ed152d3221096dc380/assets/image2.png)
 
 ## Features
 
@@ -57,4 +57,4 @@ The app relies on several Flutter packages and libraries, including:
 
 You can find the complete list of dependencies in the `pubspec.yaml` file. Follow the [pub.dev](https://pub.dev) for more dependencies.
 
-``
+Thank You!
