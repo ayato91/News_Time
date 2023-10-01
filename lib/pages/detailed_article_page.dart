@@ -63,7 +63,8 @@ class _ArticleDetailsState extends State<ArticleDetails> {
                     width: double.infinity,
                     decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: NetworkImage(widget.article.urlToImage),
+                            image:
+                                NetworkImage(widget.article.urlToImage.toString()),
                             fit: BoxFit.fill),
                         borderRadius: BorderRadius.circular(12)),
                   ),

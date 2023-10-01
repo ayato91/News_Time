@@ -6,7 +6,7 @@ import 'package:news_app_with_api/services/trending_service_api.dart';
 import 'package:news_app_with_api/services/mobile_service_api.dart';
 import 'package:news_app_with_api/services/home_service_api.dart';
 
-void main() => runApp(const MyApp());
+void main() => const MyApp();
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -78,6 +78,14 @@ class _HomePageState extends State<HomePage> {
                       return articleViewer(articles![index], context);
                     },
                   );
+                } else if (snapshot.hasError) {
+                  //! Exception Handling
+
+                  return const Center(
+                      child: Text(
+                    " Something Went Wrong :(",
+                    style: TextStyle(fontSize: 30),
+                  ));
                 }
                 return const Column(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -112,6 +120,14 @@ class _HomePageState extends State<HomePage> {
                       return articleViewer(articles![index], context);
                     },
                   );
+                } else if (snapshot.hasError) {
+                  //! Exception Handling
+
+                  return const Center(
+                      child: Text(
+                    " Something Went Wrong :(",
+                    style: TextStyle(fontSize: 30),
+                  ));
                 }
                 return const Column(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -146,6 +162,14 @@ class _HomePageState extends State<HomePage> {
                       return articleViewer(articles![index], context);
                     },
                   );
+                } else if (snapshot.hasError) {
+                  //! Exception Handling
+
+                  return const Center(
+                      child: Text(
+                    " Something Went Wrong :(",
+                    style: TextStyle(fontSize: 30),
+                  ));
                 }
                 return const Column(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -180,6 +204,14 @@ class _HomePageState extends State<HomePage> {
                       return articleViewer(articles![index], context);
                     },
                   );
+                } else if (snapshot.hasError) {
+                  //! Exception Handling
+
+                  return const Center(
+                      child: Text(
+                    " Something Went Wrong :(",
+                    style: TextStyle(fontSize: 30),
+                  ));
                 }
                 return const Column(
                   mainAxisAlignment: MainAxisAlignment.center,

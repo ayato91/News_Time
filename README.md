@@ -1,5 +1,9 @@
-# News_Time
+# News Time
 
-A new Flutter project
+A simple Flutter app for Displaying News.
+In this app, all news are fetched from NewsAPI. 
 
-## Getting Started
+## Screenshots
+
+
+## Features

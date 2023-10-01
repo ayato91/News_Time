@@ -6,7 +6,7 @@ import 'package:news_app_with_api/model/article_model.dart';
 
 class TrendingServiceApi {
   final endPointURL =
-      "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=18eb60d76bc143b59ff8b7bf2d228d87";
+      "https://newsapi.org/v2/everything?q=tesla&from=2023-09-01&sortBy=publishedAt&apiKey=18eb60d76bc143b59ff8b7bf2d228d87";
 
 //! Function for requesting the data to the given URL
 

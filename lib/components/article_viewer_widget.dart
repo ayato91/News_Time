@@ -36,7 +36,7 @@ Widget articleViewer(Article article, BuildContext context) {
               width: double.infinity,
               decoration: BoxDecoration(
                   image: DecorationImage(
-                      image: NetworkImage(article.urlToImage),
+                      image: NetworkImage(article.urlToImage.toString()),
                       fit: BoxFit.fill),
                   borderRadius: BorderRadius.circular(12)),
             ),
