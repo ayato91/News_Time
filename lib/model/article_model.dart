@@ -22,11 +22,11 @@ class Article {
   Source source;
   String? author = '';
   String title;
-  String description;
+  String? description;
   String url;
   String? urlToImage = '';
   String publishedAt;
-  String content;
+  String? content;
 
   Article({
     required this.source,
@@ -44,11 +44,11 @@ class Article {
       source: Source.fromJson(json['source']),
       author: json['author'] ?? '',
       title: json['title'] as String,
-      description: json['description'] as String,
+      description: json['description'] ?? "",
       url: json['url'] as String,
       urlToImage: json['urlToImage'] ?? '',
       publishedAt: json['publishedAt'] as String,
-      content: json['content'] as String,
+      content: json['content'] ?? "",
     );
   }
 }

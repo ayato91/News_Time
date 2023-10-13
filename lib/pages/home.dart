@@ -15,7 +15,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   HomeServiceApi clientHome = HomeServiceApi();
-  TrendingServiceApi clientTrending = TrendingServiceApi();
+  BusinessServiceApi clientBusiness = BusinessServiceApi();
   MobileServiceApi clientMobile = MobileServiceApi();
   AllServiceApi clientAll = AllServiceApi();
   int pageValue = 0;
@@ -39,7 +39,7 @@ class _HomePageState extends State<HomePage> {
           destinations: const [
             NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
             NavigationDestination(
-                icon: Icon(Icons.trending_up), label: 'Trending'),
+                icon: Icon(Icons.trending_up), label: 'Business'),
             NavigationDestination(
                 icon: Icon(Icons.phone_iphone_sharp), label: 'Mobile'),
             NavigationDestination(icon: Icon(Icons.star), label: 'All'),
@@ -94,7 +94,7 @@ class _HomePageState extends State<HomePage> {
             thickness: 9,
             trackVisibility: true,
             child: FutureBuilder(
-              future: clientTrending.getArticles(),
+              future: clientBusiness.getArticles(),
               builder: (context, AsyncSnapshot<List<Article>> snapshot) {
                 if (snapshot.hasData) {
                   List<Article>? articles = snapshot.data;

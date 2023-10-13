@@ -63,8 +63,8 @@ class _ArticleDetailsState extends State<ArticleDetails> {
                     width: double.infinity,
                     decoration: BoxDecoration(
                         image: DecorationImage(
-                            image:
-                                NetworkImage(widget.article.urlToImage.toString()),
+                            image: NetworkImage(
+                                widget.article.urlToImage.toString()),
                             fit: BoxFit.fill),
                         borderRadius: BorderRadius.circular(12)),
                   ),
@@ -75,7 +75,7 @@ class _ArticleDetailsState extends State<ArticleDetails> {
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 5),
                     child: Text(
-                      widget.article.description,
+                      widget.article.description ?? "",
                       textAlign: TextAlign.justify,
                       style: const TextStyle(fontSize: 25),
                     ),
@@ -101,7 +101,7 @@ class _ArticleDetailsState extends State<ArticleDetails> {
                           padding: const EdgeInsets.symmetric(
                               horizontal: 5, vertical: 30),
                           child: Text(
-                            widget.article.content,
+                            widget.article.content ?? "",
                             textAlign: TextAlign.justify,
                             style: const TextStyle(fontSize: 23),
                           ),
