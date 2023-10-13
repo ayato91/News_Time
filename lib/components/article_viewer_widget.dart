@@ -58,6 +58,7 @@ Widget articleViewer(Article article, BuildContext context) {
             //! News Title
 
             SizedBox(
+              width: double.infinity,
               child: Text(
                 article.title,
                 style:

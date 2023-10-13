@@ -20,11 +20,11 @@ class Source {
 
 class Article {
   Source source;
-  String? author = '';
+  String? author;
   String title;
   String? description;
   String url;
-  String? urlToImage = '';
+  String? urlToImage;
   String publishedAt;
   String? content;
 
@@ -32,11 +32,11 @@ class Article {
     required this.source,
     this.author,
     required this.title,
-    required this.description,
+    this.description,
     required this.url,
     this.urlToImage,
     required this.publishedAt,
-    required this.content,
+    this.content,
   });
 
   factory Article.fromJson(Map<String, dynamic> json) {
